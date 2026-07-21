@@ -5,14 +5,18 @@ meta {
 }
 
 delete {
-  url: {{baseUrl}}/api/tasks/{{taskId}}
+  url: 177.7.32.156/JDCBact4t4/api/tasks/2
   body: none
-  auth: none
+  auth: bearer
 }
 
 headers {
   Accept: application/json
   Authorization: Bearer {{token}}
+}
+
+auth:bearer {
+  token: jDCkCdME55Gd5Tl2vVnhJCV3u99viABwyCylA1MM08fa016a
 }
 
 tests {

@@ -5,9 +5,9 @@ meta {
 }
 
 post {
-  url: http://127.0.0.1:8000/api/login
+  url: 177.7.32.156/JDCBact4t4/api/login
   body: json
-  auth: none
+  auth: bearer
 }
 
 headers {
@@ -15,9 +15,13 @@ headers {
   Content-Type: application/json
 }
 
+auth:bearer {
+  token: asd
+}
+
 body:json {
   {
-    "email": "dani@example.com",
+    "email": "jose@example.com",
     "password": "password123"
   }
 }
