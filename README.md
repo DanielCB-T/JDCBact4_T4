@@ -226,7 +226,8 @@ bruno-collection/
 
 | Prueba                          | Captura |
 |----------------------------------|---------|
-| Registro                         | ![Registro](./docs/images/register.png) |
+| Registro                         | ![Registro](<img width="1627" height="427" alt="image" src="https://github.com/user-attachments/assets/af78c9c5-a6a6-4f71-ac1b-879cf0ba7d81" />
+) |
 | Login                             | ![Login](./docs/images/login.png) |
 | Sin token (401)                   | ![Sin token](./docs/images/no-token.png) |
 | Crear tarea                       | ![Crear tarea](./docs/images/create-task.png) |
