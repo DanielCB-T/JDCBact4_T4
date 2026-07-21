@@ -206,13 +206,6 @@ bruno-collection/
 
 ## 8. Capturas de pantalla
 
-> Agrega aquí las evidencias de tus pruebas (Bruno o Postman). Sugerencia de contenido mínimo:
-> - Registro exitoso (201)
-> - Login exitoso (200) y login fallido (401)
-> - Endpoint protegido rechazado sin token (401)
-> - Crear, listar, ver, actualizar y eliminar una tarea
-> - Un caso de validación fallida (422)
-
 | Prueba | Captura |
 |---------|---------|
 | Registro | <img src="https://github.com/user-attachments/assets/af78c9c5-a6a6-4f71-ac1b-879cf0ba7d81" width="700"> |
