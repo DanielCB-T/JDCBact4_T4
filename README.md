@@ -213,20 +213,13 @@ bruno-collection/
 > - Crear, listar, ver, actualizar y eliminar una tarea
 > - Un caso de validación fallida (422)
 
-| Prueba                          | Captura |
-|----------------------------------|---------|
-| Registro                         | <img width="1627" height="427" alt="image" src="https://github.com/user-attachments/assets/af78c9c5-a6a6-4f71-ac1b-879cf0ba7d81" />|
-| Login                             | <img width="1650" height="458" alt="image" src="https://github.com/user-attachments/assets/86f51a1e-8144-4e63-b8d4-90ca746a4b22" />
- |
-| Sin token (401)                   |<img width="1661" height="252" alt="image" src="https://github.com/user-attachments/assets/7f745c7b-0594-437c-8c07-be47ffdd8ddb" />
-|
-| Crear tarea                       | <img width="1645" height="482" alt="image" src="https://github.com/user-attachments/assets/38687987-29ef-4996-9d53-81275286bf81" />
- |
-| Listar tareas (paginado)          | <img width="1641" height="836" alt="image" src="https://github.com/user-attachments/assets/0dfcda08-f581-49f2-9c5e-bfb1b5108b6d" />
- |
-| Actualizar tarea                  | <img width="1641" height="471" alt="image" src="https://github.com/user-attachments/assets/05a68944-51fb-433c-88e7-e48ca94f98d2" />
- |
-| Eliminar tarea                    | <img width="1642" height="338" alt="image" src="https://github.com/user-attachments/assets/ab9e24ad-8b48-4704-808a-364c6d665e97" />
-|
-| Validación fallida (422)          | <img width="1651" height="358" alt="image" src="https://github.com/user-attachments/assets/075ce484-d414-4ce2-8713-3036a6766e0c" />
- |
+| Prueba | Captura |
+|---------|---------|
+| Registro | <img src="https://github.com/user-attachments/assets/af78c9c5-a6a6-4f71-ac1b-879cf0ba7d81" width="700"> |
+| Login | <img src="https://github.com/user-attachments/assets/86f51a1e-8144-4e63-b8d4-90ca746a4b22" width="700"> |
+| Sin token (401) | <img src="https://github.com/user-attachments/assets/7f745c7b-0594-437c-8c07-be47ffdd8ddb" width="700"> |
+| Crear tarea | <img src="https://github.com/user-attachments/assets/38687987-29ef-4996-9d53-81275286bf81" width="700"> |
+| Listar tareas (paginado) | <img src="https://github.com/user-attachments/assets/0dfcda08-f581-49f2-9c5e-bfb1b5108b6d" width="700"> |
+| Actualizar tarea | <img src="https://github.com/user-attachments/assets/05a68944-51fb-433c-88e7-e48ca94f98d2" width="700"> |
+| Eliminar tarea | <img src="https://github.com/user-attachments/assets/ab9e24ad-8b48-4704-808a-364c6d665e97" width="700"> |
+| Validación fallida (422) | <img src="https://github.com/user-attachments/assets/075ce484-d414-4ce2-8713-3036a6766e0c" width="700"> |
