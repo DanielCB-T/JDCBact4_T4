@@ -1,0 +1,43 @@
+meta {
+  name: 2 - Create Task
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://127.0.0.1:8000/api/tasks
+  body: json
+  auth: bearer
+}
+
+headers {
+  Accept: application/json
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+}
+
+auth:bearer {
+  token: kIjm8OsytZajctp8wOQroQrbZA2uhsX7yhi7yPe8c60cb060
+}
+
+body:json {
+  {
+    "autor": "Jose",
+    "title": "Comprar pan",
+    "description": "Ir a la panadería antes de las 8pm",
+    "category": "hogar",
+    "priority": "media"
+  }
+}
+
+script:post-response {
+  if (res.body.data && res.body.data.id) {
+    bru.setEnvVar("taskId", res.body.data.id);
+  }
+}
+
+tests {
+  test("status is 201", function () {
+    expect(res.getStatus()).to.equal(201);
+  });
+}

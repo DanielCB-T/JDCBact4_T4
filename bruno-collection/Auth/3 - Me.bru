@@ -1,0 +1,26 @@
+meta {
+  name: 3 - Me
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://127.0.0.1:8000/api/me
+  body: none
+  auth: bearer
+}
+
+headers {
+  Accept: application/json
+  Authorization: Bearer {{token}}
+}
+
+auth:bearer {
+  token: 6usF4kypwSdZUhqq5phCiQch42QnsrspXF776ZAm3859ea5f
+}
+
+tests {
+  test("status is 200", function () {
+    expect(res.getStatus()).to.equal(200);
+  });
+}

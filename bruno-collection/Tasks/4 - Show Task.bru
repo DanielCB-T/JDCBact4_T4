@@ -1,0 +1,26 @@
+meta {
+  name: 4 - Show Task
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://127.0.0.1:8000/api/tasks/1
+  body: none
+  auth: bearer
+}
+
+headers {
+  Accept: application/json
+  Authorization: Bearer {{token}}
+}
+
+auth:bearer {
+  token: kIjm8OsytZajctp8wOQroQrbZA2uhsX7yhi7yPe8c60cb060
+}
+
+tests {
+  test("status is 200", function () {
+    expect(res.getStatus()).to.equal(200);
+  });
+}

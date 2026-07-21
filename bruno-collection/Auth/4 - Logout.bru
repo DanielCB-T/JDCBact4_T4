@@ -1,0 +1,26 @@
+meta {
+  name: 4 - Logout
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://127.0.0.1:8000/api/logout
+  body: none
+  auth: bearer
+}
+
+headers {
+  Accept: application/json
+  Authorization: Bearer {{token}}
+}
+
+auth:bearer {
+  token: 6usF4kypwSdZUhqq5phCiQch42QnsrspXF776ZAm3859ea5f
+}
+
+tests {
+  test("status is 200", function () {
+    expect(res.getStatus()).to.equal(200);
+  });
+}

@@ -1,0 +1,33 @@
+meta {
+  name: 3 - Create Task Validation Error
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/tasks
+  body: json
+  auth: none
+}
+
+headers {
+  Accept: application/json
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+}
+
+body:json {
+  {
+    "title": "",
+    "priority": "urgentisima"
+  }
+}
+
+tests {
+  test("status is 422", function () {
+    expect(res.getStatus()).to.equal(422);
+  });
+  test("has errors object", function () {
+    expect(res.body.errors).to.be.an("object");
+  });
+}

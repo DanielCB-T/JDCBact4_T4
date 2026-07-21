@@ -1,0 +1,43 @@
+meta {
+  name: 1 - Register
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8000/api/register
+  body: json
+  auth: none
+}
+
+headers {
+  Accept: application/json
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "Jose Daniel",
+    "email": "jose@example.com",
+    "password": "password123",
+    "password_confirmation": "password123"
+  }
+}
+
+script:post-response {
+  if (res.body.access_token) {
+    bru.setEnvVar("token", res.body.access_token);
+  }
+}
+
+tests {
+  test("status is 201", function () {
+    expect(res.getStatus()).to.equal(201);
+  });
+  test("returns access_token", function () {
+    expect(res.body.access_token).to.be.a("string");
+  });
+  test("never exposes password", function () {
+    expect(res.body.user.password).to.be.undefined;
+  });
+}

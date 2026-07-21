@@ -1,0 +1,25 @@
+meta {
+  name: 5 - Protegido con token
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://127.0.0.1:8000/api/tasks
+  body: none
+  auth: bearer
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:bearer {
+  token: kIjm8OsytZajctp8wOQroQrbZA2uhsX7yhi7yPe8c60cb060
+}
+
+tests {
+  test("status is 401 when no token is sent", function () {
+    expect(res.getStatus()).to.equal(401);
+  });
+}
